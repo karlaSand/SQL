@@ -1,0 +1,25 @@
+CREATE TABLE store (id integer primary key, name text, color text, quantity integer, price integer);
+
+Insert into store values (1, "skates", "blue", 6, "$49.99");
+insert into store values (2, "skates", "purple", 8, "$79.99");
+insert into store values (3, "skates", "pink", 5, "$59.99");
+insert into store values (4, "skates", "black", 9, "$69.99");
+insert into store values (5, "skates", "white", 10, "$69.99");
+insert into store values (6, "shoelaces", "white", 20, "$20");
+insert into store values (7, "shoelaces", "blue", 20, "$20");
+insert into store values (8, "shoelaces", "pink", 20, "$20");
+insert into store values (9, "shoelaces", "black", 20, "$20");
+insert into store values (10, "shoelaces", "red", 20, "$20");
+insert into store values (11, "socks", "blue", 10, "$15");
+insert into store values (12, "socks", "purple", 10, "$15");
+insert into store values (13, "socks", "pink", 10, "$15");
+insert into store values (14, "socks", "black", 10, "$15");
+insert into store values (15, "socks", "white", 10, "$15");
+
+What is the inventory total?
+select sum(quantity) from store;
+
+
+display the database ordered by price
+SELECT * FROM store
+ORDER BY price
